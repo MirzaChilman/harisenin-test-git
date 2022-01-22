@@ -1,3 +1,5 @@
 FROM ubuntu:18.04
 COPY . /app
-RUN make /app && apt-get update
+RUN make /app 
+CMD python /app/app.py
+RUN apt-get update
